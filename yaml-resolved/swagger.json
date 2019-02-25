@@ -1,0 +1,12 @@
+---
+swagger: "2.0"
+info:
+  description: adding in a description22
+  version: "1.0"
+  title: ""
+host: virtserver.swaggerhub.com
+basePath: /AmandaHarperDesign/Info/1.0
+schemes:
+- https
+paths: {}
+definitions: {}

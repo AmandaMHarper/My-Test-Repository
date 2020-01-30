@@ -1,10 +1,11 @@
 {
   "openapi" : "3.0.0",
   "info" : {
-    "title" : "Swagger Petstore",
+    "title" : "Showing Elli how cool this is",
     "description" : "This is a sample Petstore server.  You can find\nout more about Swagger at\n[http://swagger.io](http://swagger.io) or on\n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n",
     "termsOfService" : "http://swagger.io/terms/",
     "contact" : {
+      "name" : "Amanda and Elli",
       "email" : "apiteam@swagger.io"
     },
     "license" : {
@@ -18,12 +19,15 @@
     "url" : "http://swagger.io"
   },
   "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/smartbear/IntegrationTestAPIMan/1.0.0",
+    "url" : "https://virtserver.swaggerhub.com/AmandasOrg/APINameTest/1.0.0",
     "description" : "SwaggerHub API Auto Mocking"
   }, {
     "url" : "https://petstore.swagger.io/v2"
   } ],
   "tags" : [ {
+    "name" : "store",
+    "description" : "Access to Petstore orders"
+  }, {
     "name" : "pet",
     "description" : "Everything about your Pets",
     "externalDocs" : {
@@ -31,15 +35,14 @@
       "url" : "http://swagger.io"
     }
   }, {
-    "name" : "store",
-    "description" : "Access to Petstore orders"
-  }, {
     "name" : "user",
     "description" : "Operations about user",
     "externalDocs" : {
       "description" : "Find out more about our store",
       "url" : "http://swagger.io"
     }
+  }, {
+    "name" : "This is my new tag"
   } ],
   "paths" : {
     "/pet" : {
@@ -352,8 +355,8 @@
     },
     "/store/inventory" : {
       "get" : {
-        "tags" : [ "store" ],
-        "summary" : "Returns pet inventories by status",
+        "tags" : [ "store", "pet", "user" ],
+        "summary" : "Returns pet inventories by ",
         "description" : "Returns a map of status codes to quantities",
         "operationId" : "getInventory",
         "responses" : {

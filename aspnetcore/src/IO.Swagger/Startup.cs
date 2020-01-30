@@ -1,5 +1,5 @@
 /*
- * Swagger Petstore
+ * Showing Elli how cool this is
  *
  * This is a sample Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/). 
  *
@@ -73,11 +73,11 @@ namespace IO.Swagger
                     c.SwaggerDoc("1.0.0", new Info
                     {
                         Version = "1.0.0",
-                        Title = "Swagger Petstore",
-                        Description = "Swagger Petstore (ASP.NET Core 2.0)",
+                        Title = "Showing Elli how cool this is",
+                        Description = "Showing Elli how cool this is (ASP.NET Core 2.0)",
                         Contact = new Contact()
                         {
-                           Name = "Swagger Codegen Contributors",
+                           Name = "Amanda and Elli",
                            Url = "https://github.com/swagger-api/swagger-codegen",
                            Email = "apiteam@swagger.io"
                         },
@@ -87,7 +87,7 @@ namespace IO.Swagger
                     c.DescribeAllEnumsAsStrings();
                     c.IncludeXmlComments($"{AppContext.BaseDirectory}{Path.DirectorySeparatorChar}{_hostingEnv.ApplicationName}.xml");
                     // Sets the basePath property in the Swagger document generated
-                    c.DocumentFilter<BasePathFilter>("/smartbear/IntegrationTestAPIMan/1.0.0");
+                    c.DocumentFilter<BasePathFilter>("/AmandasOrg/APINameTest/1.0.0");
 
                     // Include DataAnnotation attributes on Controller Action parameters as Swagger validation rules (e.g required, pattern, ..)
                     // Use [ValidateModelState] on Actions to actually validate it in C# as well!
@@ -111,10 +111,10 @@ namespace IO.Swagger
                 .UseSwaggerUI(c =>
                 {
                     //TODO: Either use the SwaggerGen generated Swagger contract (generated from C# classes)
-                    c.SwaggerEndpoint("/swagger/1.0.0/swagger.json", "Swagger Petstore");
+                    c.SwaggerEndpoint("/swagger/1.0.0/swagger.json", "Showing Elli how cool this is");
 
                     //TODO: Or alternatively use the original Swagger contract that's included in the static files
-                    // c.SwaggerEndpoint("/swagger-original.json", "Swagger Petstore Original");
+                    // c.SwaggerEndpoint("/swagger-original.json", "Showing Elli how cool this is Original");
                 });
 
             if (env.IsDevelopment())

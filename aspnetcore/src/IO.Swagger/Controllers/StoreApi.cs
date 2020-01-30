@@ -1,5 +1,5 @@
 /*
- * Swagger Petstore
+ * Showing Elli how cool this is
  *
  * This is a sample Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/). 
  *
@@ -35,7 +35,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Invalid ID supplied</response>
         /// <response code="404">Order not found</response>
         [HttpDelete]
-        [Route("/smartbear/IntegrationTestAPIMan/1.0.0/store/order/{orderId}")]
+        [Route("/AmandasOrg/APINameTest/1.0.0/store/order/{orderId}")]
         [ValidateModelState]
         [SwaggerOperation("DeleteOrder")]
         public virtual IActionResult DeleteOrder([FromRoute][Required]long? orderId)
@@ -50,12 +50,12 @@ namespace IO.Swagger.Controllers
         }
 
         /// <summary>
-        /// Returns pet inventories by status
+        /// Returns pet inventories by 
         /// </summary>
         /// <remarks>Returns a map of status codes to quantities</remarks>
         /// <response code="200">successful operation</response>
         [HttpGet]
-        [Route("/smartbear/IntegrationTestAPIMan/1.0.0/store/inventory")]
+        [Route("/AmandasOrg/APINameTest/1.0.0/store/inventory")]
         [Authorize(AuthenticationSchemes = ApiKeyAuthenticationHandler.SchemeName)]
         [ValidateModelState]
         [SwaggerOperation("GetInventory")]
@@ -82,7 +82,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Invalid ID supplied</response>
         /// <response code="404">Order not found</response>
         [HttpGet]
-        [Route("/smartbear/IntegrationTestAPIMan/1.0.0/store/order/{orderId}")]
+        [Route("/AmandasOrg/APINameTest/1.0.0/store/order/{orderId}")]
         [ValidateModelState]
         [SwaggerOperation("GetOrderById")]
         [SwaggerResponse(statusCode: 200, type: typeof(Order), description: "successful operation")]
@@ -112,7 +112,7 @@ namespace IO.Swagger.Controllers
         /// <response code="200">successful operation</response>
         /// <response code="400">Invalid Order</response>
         [HttpPost]
-        [Route("/smartbear/IntegrationTestAPIMan/1.0.0/store/order")]
+        [Route("/AmandasOrg/APINameTest/1.0.0/store/order")]
         [ValidateModelState]
         [SwaggerOperation("PlaceOrder")]
         [SwaggerResponse(statusCode: 200, type: typeof(Order), description: "successful operation")]
